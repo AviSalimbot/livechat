@@ -1,4 +1,5 @@
 body {
+  background-color: #fefefe;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +11,147 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+input {
+  padding: 10px;
+  font-size: 1.2em;
+  background-color: #fff;
+  border: 0px;
+}
+.incoming-call-popup {
+  /* Add more specific class or use !important if needed */
+  /* Example: */
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+button{
+  border: none;
+  padding: 10px;
+  background: #2186f6;
+  color:#fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: 0px;
+}
+.vid{
+  background: transparent;
+  color: gray;
+}
+h1, h3{
+  margin: 0;
+  margin-left: 10px;
+  color: white;
+}
+
+.container{
+  position: relative;
+}
+
+.register{
+  position: fixed;
+  padding:30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  top:35%;
+  left:32%;
+  display: flex;
+  flex-direction: row;
+}
+.chat-box{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin:40px 50px;
+  height: 90vh;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.member-list{
+  padding-right: 5px;
+  width: 20%;
+  border-right: 1px solid #fff;
+}
+
+.chat-content{
+  width:80%;
+  margin-left: 15px;
+}
+
+.chat-messages {
+  height: 75vh;
+}
+
+.send-message{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.input-message{
+  background-color: #fff;
+  width:90%;
+  border-radius: 5px;
+  border: 0px
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+.send-button{
+  width:10%;
+  border-radius: 5px;
+  background-color: #2186f6;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.member{
+  padding: 10px;
+  background: #fefefe;
+  color: #000;
+  border:#000;
+  cursor: pointer;
+  margin: 5px 2px;
+}
+.member.active{
+  background: rgba(33, 134, 246, 0.25);
+  color:#000;
+}
+.member:hover{
+  background: rgba(33, 134, 246, 0.10);
+  color:#000;
+}
+
+.avatar{
+  margin-left: 0px;
+  padding-bottom: 3px;
+  font-size: 12px;
+  color:gray;
+}
+.avatar.self{
+  color:#fff;
+  background-color: rgba(33, 134, 246, 1);
+}
+.message-container{
+  margin-bottom: 5px;
+}
+.message{
+  padding-bottom:5px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+}
+.message-data{
+  padding: 5px 15px;
+  border-radius: 20px;
+  background-color: gray;
+  color: #fff;
+}
+.message.self{
+  justify-content: end;
+}
+
+.message.self .message-data{
+  background-color: rgba(33, 134, 246, 1);
 }
